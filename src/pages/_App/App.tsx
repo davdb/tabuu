@@ -1,20 +1,19 @@
 import React from "react";
+import { BrowserRouter, Switch, Route } from "react-router-dom";
 
-import logo from "theme/logo.svg";
+import Game from "pages/Game";
+import Home from "pages/Home";
+import HTTP404 from "pages/_404";
 
 function App() {
   return (
-    <div>
-      <header>
-        <img src={logo} alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a href="https://reactjs.org" target="_blank" rel="noopener noreferrer">
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <Switch>
+        <Route exact path="/" component={Home} />
+        <Route exact path="/game" component={Game} />
+        <Route component={HTTP404} />
+      </Switch>
+    </BrowserRouter>
   );
 }
 
