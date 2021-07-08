@@ -1,5 +1,6 @@
 import React from "react";
+import HomeView from "components/views/HomeView";
 
-const Home = () => <div>Home page</div>;
+const Home = () => <HomeView />;
 
 export default Home;

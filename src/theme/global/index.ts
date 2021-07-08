@@ -16,7 +16,7 @@ const GlobalStyle = createGlobalStyle`
     margin: 0;
     padding: 0;
     font-size: 1.6rem;
-    background-color: white;
+    background-color: #0A0B22;
   }
 
 `;
